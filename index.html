@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    </head>
+    <!-- Page top header -->
+    <header>
+        <nav class="intro-header">
+            <!-- Fluid container -->
+            <div class="container-fluid">
+                <!-- Right aligned Nav Bar -->
+                <ul class="navigation navbar-right">
+                    <!--  Sign In button-->
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="signin"><i class="fa fa-user"></i> SIGN IN</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!-- The Modal -->
+    <div id="id01" class="modal-01">
+        <!-- Modal Content -->
+        <form class="modal-content-01 animate" action="/action_page.php">
+            <!-- Close Button -->
+            <div>
+                <span onclick="document.getElementById('id01').style.display='none'" class="close-01" title="Close">&times;</span>
+            </div>
+            <!-- Modal Inside Content -->
+            <div class="container-01">
+                <div class="content">
+                    <!-- Sign In Heading -->
+                    <h2>Sign In!</h2>
+                    <!-- Social Login Buttons -->
+                    <div class="buttons">
+                        <!-- Facebook Button -->
+                        <a href="#" class="btn btn-block btn-social btn-facebook">
+                            <i class="fa fa-facebook" style="font-size: 17px; padding-top: 3px" ></i> Facebook
+                        </a>
+                        <!-- Google Button -->
+                        <a href="#" class="btn btn-block btn-social btn-google">
+                            <i class="fa fa-google" style="font-size: 17px; padding-top: 3px"></i> Google
+                        </a>
+                    </div>
+                    <!-- Input text fields -->
+                    <div class="inputs">
+                        <!-- The 'or' separator -->
+                        <div class="separator">or</div>
+                        <!-- Email input field -->
+                        <input type="text" placeholder="Email" name="email" class="input-01" required>
+                        <!-- Password input field -->
+                        <input type="password" placeholder="Password" name="psw" class="input-01" required>
+                        <!-- Log In button -->
+                        <button type="submit" class="submit-01">LOG IN</button>
+                        <!-- Forgot Password -->
+                        <span class="forgot"><a href="#">Forgot Your Password?</a></span>
+                    </div>
+                    <!-- Sign Up div -->
+                    <div class="signup" >
+                        <!-- Don't have account text -->
+                        <span class="signup-01">Don't have an account yet?</span>
+                        <!-- Sign-up button -->
+                        <a class="signup-02" href="#">SIGNUP!</a>
+                        <!-- Removing float property to contain inside container -->
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</html>

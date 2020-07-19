@@ -1,0 +1,15 @@
+How to check if a variable is a number in javascript?
+
+We can use either the isNaN() function or the typeof function.
+
+1. isNaN():
+	if my variable is 'num' ,
+
+	if(isNaN(num))     will return false if 'num' is a number,
+			   will return true if 'num' is not a number.
+2. typeof:
+	if my variable is 'num' ,
+
+	typeof num	   will return the string 'number' if 'num' is a number,
+			   will not return the string 'number' otherwise.  
+
